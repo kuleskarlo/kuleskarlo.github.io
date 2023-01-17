@@ -23,31 +23,65 @@ div.videowrapper iframe {
 
 ul {
 	list-style-type: none;
-       margin: 0;
-       padding: 0;
+    margin: 0;
+    padding: 0;
 	overflow: hidden;
 	background-color: black;
-	position: -webkit-sticky; /* Safari */
-       position: sticky;
-       top: 0;
+	position: fixed;
+    top: 0;
+}
+
+.naslov {
+  float: left;
+  font-family: Playfair Display;
+  color: White;
+  font-size: 16px;
 }
 
 li {
-  float: left;
+	float: right;
 }
 
-li a {
-  display: block;
+li a, .dropbtn {
+  display: inline-block;
   color: white;
   text-align: center;
-  padding: 20px 128px;
+  padding: 20px 16px;
   text-decoration: none;
   font-family: Lato;
   font-size: 16px;
 }
 
-li a:hover {
-  background-color: Grey;
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: greenyellow;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: Lato;
+}
+
+.dropdown-content a:hover {background-color: green;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 h2.godine {
@@ -88,6 +122,7 @@ div.tekst {
 	position: absolute;
 	bottom: 8px;
 	left: 16px;
+	font-size: 300%;
 }
 </style>
 
@@ -99,17 +134,19 @@ div.tekst {
 <body>
 
 <div>
-<h1 style="text-align:center;font-family:Playfair Display;background-color:Black;color:White;">History of the Internet</h1>
-</div>
-
-<div>
 <ul>
-	<li><a href="#C1">1950s</a></li>
-	<li><a href="#C2">1960s</a></li>
-	<li><a href="#C3">1970s</a></li>
-	<li><a href="#C4">1980s</a></li>
-	<li><a href="#C5">1990s</a></li>
-	<li><a href="#C6">2000s and to date</a></li>
+	<li class="naslov">History of the Internet</li>
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Decades</a>
+		<div class="dropdown-content">
+			<a href="#C1">1950s</a>
+			<a href="#C2">1960s</a>
+			<a href="#C3">1970s</a>
+			<a href="#C4">1980s</a>
+			<a href="#C5">1990s</a>
+			<a href="#C6">2000s and to date</a>
+		</div>
+	</li>
 </ul>
 </div>
 
