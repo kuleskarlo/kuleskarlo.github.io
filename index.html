@@ -1,14 +1,133 @@
-<!DOCTYPE html>
+<DOCTYPE! html>
 <html>
 
 <head>
+<style>
+
+body {
+	background-color: rgb(223, 219, 197);
+}
+
+div.videowrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 71.43%;
+}
+
+div.videowrapper iframe {
+    position: absolute;
+    align: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+ul {
+	list-style-type: none;
+       margin: 0;
+       padding: 0;
+	overflow: hidden;
+	background-color: black;
+	position: -webkit-sticky; /* Safari */
+       position: sticky;
+       top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 128px;
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 16px;
+}
+
+li a:hover {
+  background-color: Grey;
+}
+
+h2.godine {
+	color: black;
+	font-family: Lato;
+	font-size: 369%;
+	text-align: left;
+	text-decoration: underline;
+	text-indent: 30px;
+}
+
+p.center {
+	margin-right: 30px;
+       margin-left: 30px;
+	font-family: Roboto;
+	font-size: 24px;
+}
+
+div.tekst {
+	background-color: rgb(255, 252, 234);
+	max-width: 1000px;
+	margin: auto;
+}
+
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Roboto|Lato">
 <title>History of the Internet</title>
 </head>
 
 <body>
 
-<h1>Moj prvi heading</h1>
-<p>Moj prvi paragraf</p>
+<div>
+<h1 style="text-align:center;font-family:Playfair Display;background-color:Black;color:White;">History of the Internet</h1>
+</div>
 
-</body>
+<div>
+<ul>
+	<li><a href="#C1">1950s</a></li>
+	<li><a href="#C2">1960s</a></li>
+	<li><a href="#C3">1970s</a></li>
+	<li><a href="#C4">1980s</a></li>
+	<li><a href="#C5">1990s</a></li>
+	<li><a href="#C6">2000s and to date</a></li>
+</ul>
+</div>
+
+<div>
+<h3>Internet and its significance</h3>
+<p class="center">The Internet has revolutionized the world like nothing before. The invention of the telegraph, telephone, radio, and computer all precedented to people forming connections from different parts of the world. Today, the Internet is a world wide accomplishment with whom everyone can communicate, interact, exchange, transmit and interface, no matter their position on the Earth. On this website you can read how the Internet came to be throughout the last few decades.</p>
+</div>
+
+<div class="tekst">
+
+<h2 id="C1", class="godine">1950s</h2>
+<p class="center">Computer science was an emerging discipline in the late 1950s. Early computers had a central processing unit and user terminals. It was possible to exchange data, but only through a physical link, which in military practice seemed to be a big vulnerability, because if a link breaks there are no alternatives for communication. Thats when people were starting to think about time-sharing between computers and a possibility of data transfer regarding longer distances.<br>Christopher Strachey, who became the first Professor of Computation at Oxford University, filed a patent for time-sharing in February 1959. Later that year he shared his work with J.C.R. Licklider at the UNESCO Information Processing Conference in Paris. Licklider then went to propose a computer network next year in his paper Man-Computer Symbiosis. All of that was a slow build up to what would become a big infrastructure on which todays online world stands.</p>
+
+<h2 id="C2", class="godine">1960s</h2>
+<p class="center">People having heard about Lickliders idea of a computer network, he gets hired as a director of Information Processing Techniques Office (IPTO) within DARPA. DARPA, the American Defense Agency, at the time was bringing scientists from all around the US asking for a way to interconnect its main computers at Cheyenne Mountain, the Pentagon, and SAC HQ.<br>Although Licklider left IPTO in 1964, it's his work and vision of universal networking that precedented Robert Taylors (his succesor) initiation of the ARPANET development. Robert brought in Larry Roberts from MIT in 1967, who presented a proposal for the ARPANET which included packet switching concepts from Donald Davies' and Paul Barans' work, underpinned by mathematical work from Leonard Kleinrock at UCLA.<br>Bolt Beranek and Newman got assigned to build the network, and the first link was established between the Network Measurement Center at the University of California and the NLS system at Stanford Research Institute, at 22:30 hours on October 29, 1969. And just like that, the first ever message on the Internet was sent.<br><br>You can learn more about that moment in the video below.</p>
+
+<div class="videowrapper">
+<iframe width="840" height="600"
+src="https://www.youtube.com/embed/khajeqHUQ7Q">
+</iframe>
+</div>
+
+<h2 id="C3", class="godine">1970s</h2>
+<p class="center">In 1970s the ARPANET network was expanding rapidly throughout the US, but it wasn't the only working network out there in the world. There were others like the NPL network, CYCLADES and X.25, all very similar, but they handled data differently. Thats when in 1973 Robert Kahn and Vinton Cerf decided to develop together a protocol for linking multiple networks together. Later it became the Transmission Control Protocol/Internet Protocol (TCP/IP). TCP allowed computers to speak the same language and IP, when combined with TCP, helps internet traffic find its destination. Every device connected to the internet is given a unique IP number. Known as an IP address, the number can be used to find the location of any internet-connected device in the world.<br>While working at Xerox, Robert Metcalfe develops a system using cables that allows for transfer of more data over a network - the Ethernet. Tom Truscott and Steve Bellovin develop a system for transferring data over phone lines via a dial-up connection. This system becomes USENET.</p>
+
+<h2 id="C4", class="godine">1980s</h2>
+<p class="center">In 1983 the military side of the ARPANET was detached into a seperate network called MILNET. In 1986 the National Science Foundation (NSF) in the US then funded national supercomputing centers at several universities, creating NSFNET, the ARPANETs successor.<br>Because of Meltcafe's company 3Com Ethernet products being sold to the public in the early 1980s, emerged many national and international public data networks. Telenet, the first commercial network was made in 1982 and it broadened access to the Internet in the world. Paul Mockapetris, Jon Postel and Craig Partridge created the Domain Name system, which uses domain names to manage the increasing number of users on the internet. The first one was registered in 1985 belonged to a computer manufacturer - symbolics.com.</p>
+
+<h2 id="C5", class="godine">1990s</h2>
+<p class="center">Because of the existence of NSFNET, the ARPANET was decommissioned in 1990. Tim Berners-Lees invention of the World Wide Web as an application brought many social and commercial uses to what was an academic and scientific enviroment. The Web went fully global in 1994.<br>1995 was a eventful year because Microsoft launched Windows 95; Amazon, Yahoo and eBay all launched, Internet Explorer as well and Java was created. In 1998 Google was founded. Last years of this decade were riddled with speculative investment bubble, as investors rapidly stoked stock values of "dot-com" companies, followed by a market crash in the early 2000s. But this only temporarily slowed the puffery around the Internet, as it rapidly grew after that.</p>
+
+<h2 id="C6", class="godine">2000s and to date</h2>
+<p class="center">We already mentioned the rise and burst of the dotcom bubble, as the Dow Jones industrial average also saw its biggest one-day drop in history up to that point. But thankfully all of that was outshined by the rapid technical advances that would propel the Internet into a place we know today. This decade up until now can be described with households adapting, accelerately adopting and stocking with needed hardware; peoples change of perception and thought about computers ability to revolutionase communication (social media); the non-stoppable invention and upgrade of current hardware; the mass use of mobile devices. The tech world is growing so fast that it genuenly is really hard to keep up with it. But it isn't only technology that is rapidly changing, almost all the parts of human work are improving faster than ever, all thanks to Internet and its ability to connect people and share information lightning fast. With all of that said, it's impossible to predict how the Internet will look like in another 10 years, but with how fast it's changing up until now, it doesn't help but leave us excited for what's to come.</p>
+
+</div>
+
 </html>
