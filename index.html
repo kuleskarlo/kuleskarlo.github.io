@@ -72,10 +72,22 @@ div.tekst {
 	margin: auto;
 }
 
-p.slika {
-	background-image: url("slikica.png");
-	font-family: Roboto;
-	font-size: 24px;
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
 }
 </style>
 
@@ -102,9 +114,10 @@ p.slika {
 </div>
 
 
-<div>
-<h3>Internet and its significance</h3>
-<p class="slika">The Internet has revolutionized the world like nothing before. The invention of the telegraph, telephone, radio, and computer all precedented to people forming connections from different parts of the world. Today, the Internet is a world wide accomplishment with whom everyone can communicate, interact, exchange, transmit and interface, no matter their position on the Earth. On this website you can read how the Internet came to be throughout the last few decades.</p>
+<div class="container">
+	<img src="slikica.png" alt="Abstract picture of the Internet" style="width:100%;">
+	<div class="top-left">Internet and its significance</div>
+	<div class="bottom-left">The Internet has revolutionized the world like nothing before. The invention of the telegraph, telephone, radio, and computer all precedented to people forming connections from different parts of the world. Today, the Internet is a world wide accomplishment with whom everyone can communicate, interact, exchange, transmit and interface, no matter their position on the Earth. On this website you can read how the Internet came to be throughout the last few decades.</div>
 </div>
 
 <div class="tekst">
