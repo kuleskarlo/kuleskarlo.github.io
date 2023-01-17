@@ -27,15 +27,15 @@ ul {
     padding: 0;
 	overflow: hidden;
 	background-color: black;
-	position: fixed;
-    top: 0;
 }
 
 .naslov {
   float: left;
   font-family: Playfair Display;
   color: White;
-  font-size: 16px;
+  font-size: 150%;
+  text-align: center;
+  padding: 20px 30px;
 }
 
 li {
@@ -46,14 +46,14 @@ li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 20px 16px;
+  padding: 20px 30px;
   text-decoration: none;
   font-family: Lato;
-  font-size: 16px;
+  font-size: 150%;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: grey;
+  background-color: #333333;
 }
 
 li.dropdown {
@@ -63,7 +63,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: greenyellow;
+  background-color: #2E8FB3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -78,13 +78,13 @@ li.dropdown {
   font-family: Lato;
 }
 
-.dropdown-content a:hover {background-color: green;}
+.dropdown-content a:hover {background-color: #3FC2F2;}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-h2.godine {
+.godine {
 	color: black;
 	font-family: Lato;
 	font-size: 369%;
@@ -93,14 +93,14 @@ h2.godine {
 	text-indent: 30px;
 }
 
-p.center {
+.center {
 	margin-right: 30px;
     margin-left: 30px;
 	font-family: Roboto;
 	font-size: 24px;
 }
 
-div.tekst {
+.tekst {
 	background-color: rgb(255, 252, 234);
 	max-width: 1000px;
 	margin: auto;
@@ -114,20 +114,98 @@ div.tekst {
 
 .top-left {
 	position: absolute;
-	top: 8px;
-	left: 16px;
+	top: 19%;
+	left: 4%;
+	font-family: Source Sans Pro;
+	font-size: 400%;
 }
 
 .bottom-left {
 	position: absolute;
-	bottom: 8px;
-	left: 16px;
-	font-size: 300%;
+	bottom: 16%;
+	left: 4%;
+	font-family: Nunito;
+	font-size: 190%;
+	margin-right: 40%;
+	text-align: left;
 }
+
+@media screen and (max-width: 1600px) {
+  .top-left {
+    top: 19%;
+	font-size: 350%;
+  }
+  .bottom-left {
+	bottom: 19%;
+	font-size: 160%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .top-left {
+    top: 19%;
+	font-size: 290%;
+  }
+  .bottom-left {
+	bottom: 19%;
+	font-size: 140%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .top-left {
+    top: 19%;
+	font-size: 240%;
+	text-align: center;
+	
+  }
+  .bottom-left {
+	bottom: 19%;
+	font-size: 120%;
+	left: 2%;
+	margin-right: 2%;
+	text-align: center;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .top-left {
+    top: 5%;
+	font-size: 240%;
+	text-align: center;
+	right: 4%;
+	
+  }
+  .bottom-left {
+	bottom: 10%;
+	font-size: 120%;
+	left: 2%;
+	margin-right: 2%;
+	text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .top-left {
+    top: 3%;
+	font-size: 180%;
+	text-align: center;
+	right: 4%;
+	
+  }
+  .bottom-left {
+	bottom: 5%;
+	font-size: 100%;
+	left: 2%;
+	margin-right: 2%;
+	text-align: center;
+  }
+}
+
 </style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Roboto|Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Roboto|Lato|Source Sans Pro|Nunito">
 <title>History of the Internet</title>
 </head>
 
